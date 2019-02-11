@@ -11,8 +11,8 @@ import tensorflow as tf
 from utils import backbone
 from api import object_counting_api
 
-if tf.__version__ < '1.4.0':
-  raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
+if tf.__version__ < '1.12.0':
+  raise ImportError('Please upgrade your tensorflow installation to v1.12.* or later!')
 
 input_video = "./input_images_and_videos/pedestrian_survaillance.mp4"
 
